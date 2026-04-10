@@ -1,0 +1,21 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+         Weather Forecast
+      </div>
+     
+      <div>
+       <lightning-input 
+         type="text"
+         label="Enter city"
+       ></lightning-input>
+       <lightning-button 
+         variant="base"
+         label="Fetch" 
+         onclick={handleClick} 
+       ></lightning-button>
+      Temprature:  {weather}
+      Condition: {condition}
+      </div>
+    </lightning-card>
+</template>
